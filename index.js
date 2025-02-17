@@ -34,7 +34,7 @@ app.post('/add-name', (req, res) => {
         if(err){
             res.send("Error");
         } else{
-            res.send("Data submitted sucessfully");
+            res.status(201).send("Data submitted sucessfully");
         }
     });
 
